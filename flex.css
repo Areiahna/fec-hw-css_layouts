@@ -1,0 +1,104 @@
+body{
+    font-family: "Luckiest Guy", cursive;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;   
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background: url(images/cherries_background.jpg) center fixed;
+    height: 150px;
+}
+
+.nav{
+    /* background-color: red; */
+    background: radial-gradient(circle, rgb(234,169,179),red, rgb(234, 169, 179), rgb(227, 158, 170), red );
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px;
+}
+
+.nav_controls{
+    padding: 8px;
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    -webkit-text-stroke: 1px black;
+
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(250, 242, 232);
+
+}
+
+.content{
+    border: 1px black solid;
+    padding: 20px;
+}
+
+.cherry-img{
+    height: 320px;
+    width: 300px;
+}
+
+.footer {
+    background: url(images/cherries_background.jpg) center fixed;
+    height: 150px;
+}
+
+.footer-container{
+    background: radial-gradient(circle, rgb(234,169,179),red, rgb(234, 169, 179), rgb(227, 158, 170), red );
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+
+}
+
+.footer > div{
+    padding: 10px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+
+}
+
+h1 {
+    padding: 15px;
+    color: white;
+    font-weight: 100px bold;
+    font-size: 60px;
+    border-radius: 100px;
+    -webkit-text-stroke: 1px black;
+}
+
+@media screen and (max-width: 600px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nav_controls{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+}
